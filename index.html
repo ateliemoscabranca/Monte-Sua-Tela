@@ -1,12 +1,112 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>OK</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monte sua Tela</title>
+
+<style>
+body{
+  margin:0;
+  font-family:Arial;
+  background:#f6f7f9;
+}
+
+.container{
+  max-width:500px;
+  margin:auto;
+  padding:15px;
+}
+
+.header{
+  background:#fff;
+  padding:15px;
+  border-radius:12px;
+  text-align:center;
+  margin-bottom:15px;
+}
+
+.section{
+  background:#fff;
+  padding:15px;
+  margin-bottom:15px;
+  border-radius:12px;
+}
+
+img{
+  width:100%;
+  border-radius:10px;
+  margin-top:10px;
+}
+
+select,input{
+  width:100%;
+  padding:10px;
+  margin-top:10px;
+  border-radius:8px;
+  border:1px solid #ccc;
+}
+
+button{
+  width:100%;
+  padding:15px;
+  background:#962D53;
+  color:#fff;
+  border:none;
+  border-radius:10px;
+  font-size:16px;
+}
+</style>
+
 </head>
+
 <body>
 
-<h1>Funcionando</h1>
+<div class="container">
+
+<div class="header">
+<h2>Monte seu quadro personalizado</h2>
+</div>
+
+<div class="section">
+<h3>1. Escolha o tamanho</h3>
+<img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80">
+<select>
+<option>30x30cm</option>
+<option>40x60cm</option>
+<option>60x80cm</option>
+<option>100x100cm</option>
+</select>
+</div>
+
+<div class="section">
+<h3>2. Escolha o estilo</h3>
+<img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=800&q=80">
+<select>
+<option>Original</option>
+<option>Preto e branco</option>
+<option>Artístico</option>
+</select>
+</div>
+
+<div class="section">
+<h3>3. Envie sua foto</h3>
+<img src="https://images.unsplash.com/photo-1511765224389-37f0e77cf0eb?auto=format&fit=crop&w=800&q=80">
+<input type="file">
+</div>
+
+<div class="section">
+<h3>Seus dados</h3>
+<input type="text" placeholder="Nome">
+<input type="text" placeholder="Telefone">
+</div>
+
+<button onclick="window.open('https://wa.me/5531997969797')">
+Finalizar pelo WhatsApp
+</button>
+
+</div>
 
 </body>
 </html>
